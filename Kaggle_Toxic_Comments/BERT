@@ -1,0 +1,116 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "version": "0.3.2",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "accelerator": "GPU"
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/njainds/Colab_notebooks/blob/master/Kaggle_Toxic_Comments/BERT\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "CDqtwQMjghxd",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        "#BERT for classification\n",
+        "#Ref: https://github.com/kaushaltrivedi/bert-toxic-comments-multilabel/blob/master/toxic-bert-multilabel-classification.ipynb\n",
+        "#Paper: https://arxiv.org/pdf/1810.04805.pdf\n",
+        "#Project files: /content/drive/My Drive/kaggle_toxic_comments/BERT\n",
+        "#Code location: "
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "metadata": {
+        "id": "GsC0RHyBf_ob",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 50
+        },
+        "outputId": "39705a09-6ca9-4bd2-9bd2-4117325370a2"
+      },
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "import torch\n",
+        "print(\"Name of GPU : {}\".format(torch.cuda.get_device_name(0)))\n",
+        "print(\"# of GPU : {}\".format(torch.cuda.device_count()))\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Name of GPU : Tesla K80\n",
+            "# of GPU : 1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "_WBS02oIgIqL",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 50
+        },
+        "outputId": "4cef7828-121f-48e5-87af-b049f27bef4d"
+      },
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')\n",
+        "!ls \"/content/drive/My Drive/kaggle_toxic_comments/BERT\""
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n",
+            "data  pretrained-weights  pytorch_pretrained_bert\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "eHj2UgkQge09",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
